@@ -5,6 +5,7 @@ int isOdd(int);
 int square(int);
 int cube(int);
 int hcf(int,int);
+int lcm(int,int);
 
 int isEven(int num){
   return num %2==0;
@@ -29,6 +30,10 @@ int hcf(int num1,int num2){
     }
   }
   return 1;
+}
+
+int lcm(int num1,int num2){
+  return (num1*num2)/hcf(num1,num2);
 }
 
 int main(void){
@@ -57,5 +62,10 @@ int main(void){
   printf("Enter two numbers to get the hcf : ");
   scanf("%d %d",&num5,&num6);
   printf("HCF of %d and %d is %d \n",num5,num6,hcf(num5,num6));
+
+  int num7,num8;
+  printf("Enter two numbers to get the lcm : ");
+  scanf("%d %d",&num7,&num8);
+  printf("LCM of %d and %d is %d \n",num7,num8,lcm(num7,num8));
   
 }
