@@ -4,6 +4,7 @@ int isEven(int);
 int isOdd(int);
 int square(int);
 int cube(int);
+int hcf(int,int);
 
 int isEven(int num){
   return num %2==0;
@@ -21,6 +22,15 @@ int cube(int num){
   return square(num)*num;
 }
 
+int hcf(int num1,int num2){
+  for(int factor = num1; factor>1; factor--){
+    if((num1%factor==0) && (num2%factor==0)){
+      return factor;
+    }
+  }
+  return 1;
+}
+
 int main(void){
   
   int num1;
@@ -36,11 +46,16 @@ int main(void){
   int num3;
   printf("Enter a number to get the square : ");
   scanf("%d",&num3);
-  printf("%d \n",square(num3));
+  printf("Square is %d \n",square(num3));
 
   int num4;
   printf("Enter a number to get the cube : ");
   scanf("%d",&num4);
-  printf("%d \n",cube(num4));
+  printf("Cube is %d \n",cube(num4));
+
+  int num5,num6;
+  printf("Enter two numbers to get the hcf : ");
+  scanf("%d %d",&num5,&num6);
+  printf("HCF of %d and %d is %d \n",num5,num6,hcf(num5,num6));
   
 }
