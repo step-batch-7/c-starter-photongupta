@@ -6,6 +6,8 @@ long int square(int);
 long int cube(int);
 int hcf(int,int);
 int lcm(int,int);
+double getSI(double,double,double);
+
 
 int isEven(int num){
   return num %2==0;
@@ -34,6 +36,10 @@ int hcf(int num1,int num2){
 
 int lcm(int num1,int num2){
   return (num1*num2)/hcf(num1,num2);
+}
+
+double getSI(double principleAmount,double rate,double time){
+  return (principleAmount*rate*time)/100;
 }
 
 int main(void){
@@ -67,5 +73,10 @@ int main(void){
   printf("Enter two numbers to get the lcm : ");
   scanf("%d %d",&num7,&num8);
   printf("LCM of %d and %d is %d \n",num7,num8,lcm(num7,num8));
+
+  double principleAmount,rate,time;
+  printf("Enter principleAmount, rate and time in order to get the simple interest :");
+  scanf("%lf %lf %lf",&principleAmount,&rate,&time);
+  printf("SI on %lf for %lf year at the rate of %lf percent is %lf",principleAmount,time,rate,getSI(principleAmount,rate,time));
   
 }
