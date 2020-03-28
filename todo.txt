@@ -12,7 +12,7 @@ write following functions -->
 
 ✅6. LCM - Wite a function that provides the least common multiple of two given numbers (use the HCF function)
 
-7. Simple Interest - Write a function that calculates the Simple interest on a given sum with a rate of interest over a given time period
+✅7. Simple Interest - Write a function that calculates the Simple interest on a given sum with a rate of interest over a given time period
 
 8. Compound Interest - Write a function that calculates the Compound interest on a given sum with a rate of interest over a given time period
 

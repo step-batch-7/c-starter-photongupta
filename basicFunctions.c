@@ -2,8 +2,8 @@
 
 int isEven(int);
 int isOdd(int);
-int square(int);
-int cube(int);
+long int square(int);
+long int cube(int);
 int hcf(int,int);
 int lcm(int,int);
 
@@ -15,11 +15,11 @@ int isOdd(int num){
   return !isEven(num);
 }
 
-int square(int num){
+long square(int num){
   return num*num;
 }
 
-int cube(int num){
+long cube(int num){
   return square(num)*num;
 }
 
@@ -51,12 +51,12 @@ int main(void){
   int num3;
   printf("Enter a number to get the square : ");
   scanf("%d",&num3);
-  printf("Square is %d \n",square(num3));
+  printf("Square of %d is %ld \n",num3,square(num3));
 
   int num4;
   printf("Enter a number to get the cube : ");
   scanf("%d",&num4);
-  printf("Cube is %d \n",cube(num4));
+  printf("Cube of %d is %ld \n",num4,cube(num4));
 
   int num5,num6;
   printf("Enter two numbers to get the hcf : ");
