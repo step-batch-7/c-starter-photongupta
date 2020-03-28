@@ -11,6 +11,7 @@ double getSI(double,double,double);
 double getCI(double,double,double);
 double convertToFahrenheit(double);
 double convertToCentigrade(double);
+int getGreaterOfTwo(int,int);
 int greatestOfThree(int,int,int);
 double average(int,int,int);
 
@@ -60,17 +61,16 @@ double convertToCentigrade(double tempInfahrenheit){
   return (tempInfahrenheit-32)*5/9;
 }
 
-int greatestOfThree(int num1,int num2,int num3){
+int getGreaterNum(int num1,int num2){
   if(num1>num2){
-    if(num1>num3){
-      return num1;
-    }
-    return num3;
+    return num1;
   }
-  if(num2>num3){
-      return(num2);
-    }
-  return num3;
+  return num2;
+}
+
+int greatestOfThree(int num1,int num2,int num3){
+  int greaterOfTwo = getGreaterNum(num1,num2);
+  return getGreaterNum(greaterOfTwo,num3);
 }
 
 double average(int num1,int num2,int num3){
