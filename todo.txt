@@ -14,11 +14,11 @@ write following functions -->
 
 ✅7. Simple Interest - Write a function that calculates the Simple interest on a given sum with a rate of interest over a given time period
 
-8. Compound Interest - Write a function that calculates the Compound interest on a given sum with a rate of interest over a given time period
+✅8. Compound Interest - Write a function that calculates the Compound interest on a given sum with a rate of interest over a given time period
 
-9. Temperature Conversion - Write a program that converts a Temperature form fahrenheit to centigrade
+✅9. Temperature Conversion - Write a program that converts a Temperature form fahrenheit to centigrade
 
-10. Temperature Conversion - Write a program that converts a Temperature form centigrade to fahrenheit
+✅10. Temperature Conversion - Write a program that converts a Temperature form centigrade to fahrenheit
 
 11. Greatest of three numbers - Write a function that calculates the largest of three numbers 
 

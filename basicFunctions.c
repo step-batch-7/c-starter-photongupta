@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 int isEven(int);
 int isOdd(int);
@@ -7,6 +8,10 @@ long int cube(int);
 int gcd(int,int);
 int lcm(int,int);
 double getSI(double,double,double);
+double getCI(double,double,double);
+double convertToFahrenheit(double);
+double convertToCentigrade(double);
+
 
 int isEven(int num){
   return num %2==0;
@@ -41,6 +46,17 @@ double getSI(double principleAmount,double rate,double time){
   return (principleAmount*rate*time)/100;
 }
 
+double getCI(double principleAmount,double rate,double time){
+  return principleAmount*pow((1+rate/100),time);
+}
+
+double convertToFahrenheit(double tempInCentigrade){
+  return (tempInCentigrade*9/5)+32;
+}
+
+double convertToCentigrade(double tempInfahrenheit){
+  return (tempInfahrenheit-32)*5/9;
+}
 
 int main(void){
   
@@ -78,5 +94,20 @@ int main(void){
   printf("Enter principleAmount, rate and time in order to get the simple interest :");
   scanf("%lf %lf %lf",&principleAmount1,&rate1,&time1);
   printf("SI on %lf for %lf year at the rate of %lf percent is %lf",principleAmount1,time1,rate1,getSI(principleAmount1,rate1,time1));
-  
+
+  double principleAmount2,rate2,time2;
+  printf("Enter principleAmount, rate and time in order to get the compound interest :");
+  scanf("%lf %lf %lf",&principleAmount2,&rate2,&time2);
+  printf("CI on %lf for %lf year at the rate of %lf percent is %lf",principleAmount2,time2,rate2,getCI(principleAmount2,rate2,time2));
+
+  double tempInCentigrade;
+  printf("Enter the temperature in centigrade : ");
+  scanf("%lf",&tempInCentigrade);
+  printf("Temperature in fahrenheit is %lf \n",convertToFahrenheit(tempInCentigrade));
+
+  double tempInFahrenheit;
+  printf("Enter the temperature in Fahrenheit : ");
+  scanf("%lf",&tempInFahrenheit);
+  printf("Temperature in centigrade is %lf \n",convertToCentigrade(tempInFahrenheit));
+
 }
