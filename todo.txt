@@ -1,10 +1,10 @@
 write following functions -->
 
-1. isEven - Write a function that determines if a given number is even or not 
+✅1. isEven - Write a function that determines if a given number is even or not 
 
-2. isOdd using isEven - Write a function that determines if a given number is odd or not. Use the isEven function
+✅2. isOdd using isEven - Write a function that determines if a given number is odd or not. Use the isEven function
 
-3. square - Write a function that provides the square of a give a number
+✅3. square - Write a function that provides the square of a give a number
 
 4. cube - Write a function that provides the cube of a number using the square function already written.
 
