@@ -62,10 +62,7 @@ double convertToCentigrade(double tempInfahrenheit){
 }
 
 int getGreaterNum(int num1,int num2){
-  if(num1>num2){
-    return num1;
-  }
-  return num2;
+  return num1>num2?num1:num2;
 }
 
 int greatestOfThree(int num1,int num2,int num3){
@@ -139,4 +136,5 @@ int main(void){
   scanf("%d %d %d",&num12,&num13,&num14);
   printf("Average of %d, %d and %d is %lf \n",num12,num13,num14,average(num12,num13,num14));
 
+  return 0;
 }

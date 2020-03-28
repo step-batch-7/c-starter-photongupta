@@ -24,3 +24,28 @@ write following functions -->
 
 ✅12. Average of three numbers - Write a function that calculates the average of three numbers
 
+loops -->
+
+1. Factorial - Write a function that calculates the factorial of a number
+
+2. Fibonacci - Write a function that PRINTS the fibonacci series
+
+3. Odd Number Series - Write a function that PRINTS odd numbers between 1 and N
+
+4. Even Number Series - Write a function that PRINTS even numbers between 1 AND N
+
+5. Multiplication Table - Write a function that will PRINT a multiplication table of any number 'm' up until a number 'n'. So, m*1, m*2....m*n.
+
+6. Sum of any N numbers - Write a function that uses loops to calculate the sum of the any N numbers. Ex: 4+5+6+7+8=30
+
+7. Product of any N numbers - Write a function that uses loops to calculate the sum of the any N numbers. Ex: 2*3*4*5*6 = 720
+
+8. Print all odd numbers between any two numbers - Write a function that PRINTS odd numbers between any number and N
+
+9. Print every nth number between any two number - Write a function that PRINTS every nth number between any two numbers:
+(every 7th number between 1 and 100) 1,8,15,22,29,36,...
+(every 4th number between 3 and 15) 3 7 11 15
+
+10. Sum of all even numbers between any two numbers - Write a function that calculates the sum of all even numbers between any two numbers
+
+11. Print all odd numbers between N and 1 backwards - Write a function that PRINTS all odd numbers between N and 1, BACKWARDS.
