@@ -8,7 +8,7 @@ write following functions -->
 
 ✅4. cube - Write a function that provides the cube of a number using the square function already written.
 
-✅5. GCD 0 Write a function that provides the greatest common divisor of two given numbers
+✅5. GCD - Write a function that provides the greatest common divisor of two given numbers
 
 ✅6. LCM - Wite a function that provides the least common multiple of two given numbers (use the HCF function)
 
