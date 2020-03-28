@@ -6,7 +6,7 @@ write following functions -->
 
 ✅3. square - Write a function that provides the square of a give a number
 
-4. cube - Write a function that provides the cube of a number using the square function already written.
+✅4. cube - Write a function that provides the cube of a number using the square function already written.
 
 5. GCD 0 Write a function that provides the greatest common divisor of two given numbers
 
