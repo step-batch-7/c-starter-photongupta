@@ -11,6 +11,8 @@ double getSI(double,double,double);
 double getCI(double,double,double);
 double convertToFahrenheit(double);
 double convertToCentigrade(double);
+int greatestOfThree(int,int,int);
+double average(int,int,int);
 
 
 int isEven(int num){
@@ -58,6 +60,23 @@ double convertToCentigrade(double tempInfahrenheit){
   return (tempInfahrenheit-32)*5/9;
 }
 
+int greatestOfThree(int num1,int num2,int num3){
+  if(num1>num2){
+    if(num1>num3){
+      return num1;
+    }
+    return num3;
+  }
+  if(num2>num3){
+      return(num2);
+    }
+  return num3;
+}
+
+double average(int num1,int num2,int num3){
+  return (num1+num2+num3)/3;
+}
+  
 int main(void){
   
   int num1;
@@ -109,5 +128,15 @@ int main(void){
   printf("Enter the temperature in Fahrenheit : ");
   scanf("%lf",&tempInFahrenheit);
   printf("Temperature in centigrade is %lf \n",convertToCentigrade(tempInFahrenheit));
+
+  int num9,num10,num11;
+  printf("Enter 3 numbers to get the highest number : ");
+  scanf("%d %d %d",&num9,&num10,&num11);
+  printf("Greatest number is %d \n",greatestOfThree(num9,num10,num11));
+
+  int num12,num13,num14;
+  printf("Enter 3 numbers to get the average : ");
+  scanf("%d %d %d",&num12,&num13,&num14);
+  printf("Average of %d, %d and %d is %lf \n",num12,num13,num14,average(num12,num13,num14));
 
 }
