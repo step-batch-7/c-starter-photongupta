@@ -40,12 +40,12 @@ loops -->
 
 ✅7. Product of any N numbers - Write a function that uses loops to calculate the sum of the any N numbers. Ex: 2*3*4*5*6 = 720
 
-8. Print all odd numbers between any two numbers - Write a function that PRINTS odd numbers between any number and N
+✅8. Print all odd numbers between any two numbers - Write a function that PRINTS odd numbers between any number and N
 
 9. Print every nth number between any two number - Write a function that PRINTS every nth number between any two numbers:
 (every 7th number between 1 and 100) 1,8,15,22,29,36,...
 (every 4th number between 3 and 15) 3 7 11 15
 
-10. Sum of all even numbers between any two numbers - Write a function that calculates the sum of all even numbers between any two numbers
+✅10. Sum of all even numbers between any two numbers - Write a function that calculates the sum of all even numbers between any two numbers
 
 11. Print all odd numbers between N and 1 backwards - Write a function that PRINTS all odd numbers between N and 1, BACKWARDS.

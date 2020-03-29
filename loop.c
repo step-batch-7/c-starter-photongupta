@@ -9,6 +9,7 @@ void printMultiplicationTable(int,int);
 int getSumOfN(int,int);
 int getProductOfN(int,int);
 void printOddNumInRange(int,int);
+int sumOfEvenInRange(int,int);
 
 
 int factorial(int num){
@@ -70,6 +71,15 @@ void printOddNumInRange(int start,int end){
   }
 }
 
+int sumOfEvenInRange(int start,int end){
+  int even = start%2 ? start+1 : start;
+  int sum=0;
+  for(;even<=end;even+=2){
+    sum+=even;
+  }
+  return sum;
+}
+
 int main(void){
 
   int num;
@@ -97,7 +107,7 @@ int main(void){
    scanf("%d %d",&multiplier,&multiplicandLimit);
    printMultiplicationSeries(multiplier,multiplicandLimit);
 
-   int num2,num3;
+  int num2,num3;
   printf("Enter two numbers to get the sum of all the numbers between those:");
   scanf("%d %d",&num2,&num3);
   printf("Sum of all the numbers between %d and %d is %d\n",num2,num3,sumOfN(num2,num3));
@@ -107,10 +117,15 @@ int main(void){
   scanf("%d %d",&num4,&num5);
   printf("Product of all the numbers between %d and %d is %d\n",num4,num5,productOfN(num4,num5));
 
-  int start,end;
+  int num6,num7;
    printf("Enter two numbers to get all odd numbers between those:");
-   scanf("%d %d",&start,&end);
-   printOddNumInRange(start,end);
+   scanf("%d %d",&num6,&num7);
+   printOddNumInRange(num6,num7);
+
+  int num8,num9;
+  printf("Enter two numbers to get the sum of all the even numbers between those:");
+  scanf("%d %d",&num8,&num9);
+  printf("Sum of all the even numbers between %d and %d is %d\n",num8,num9,sumOfEvenInRange(num8,num9));
 
   return 0;
 }
