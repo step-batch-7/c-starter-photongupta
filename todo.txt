@@ -48,4 +48,4 @@ loops -->
 
 ✅10. Sum of all even numbers between any two numbers - Write a function that calculates the sum of all even numbers between any two numbers
 
-11. Print all odd numbers between N and 1 backwards - Write a function that PRINTS all odd numbers between N and 1, BACKWARDS.
+✅11. Print all odd numbers between N and 1 backwards - Write a function that PRINTS all odd numbers between N and 1, BACKWARDS.
