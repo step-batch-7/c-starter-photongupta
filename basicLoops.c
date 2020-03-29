@@ -97,59 +97,52 @@ void printReverseOddSeries(int limit){
 int main(void){
 
   int num;
+  int limit;
+  int start,end;
+
   printf("Enter a number to get the factorial :");
   scanf("%d",&num);
   printf("factorial of %d is %d\n",num,factorial(num));
 
-  int num1;
   printf("Enter a term to get the fibonacci series :");
-  scanf("%d",&num1);
-  printFibonacciSeries(num1);
+  scanf("%d",&num);
+  printFibonacciSeries(num);
 
-  int limit1;
   printf("Enter a limit to get the odd number series :");
-  scanf("%d",&limit1);
-  printOddSeries(limit1);
+  scanf("%d",&limit);
+  printOddSeries(limit);
 
-  int limit2;
   printf("Enter a limit to get the even number series :");
-  scanf("%d",&limit2);
-  printEvenSeries(limit2);
+  scanf("%d",&limit);
+  printEvenSeries(limit);
 
-  int multiplier,multiplicandLimit;
-  printf("Enter multiplier and multiplicandLimit to get multiplication table :");
-  scanf("%d %d",&multiplier,&multiplicandLimit);
-  printMultiplicationSeries(multiplier,multiplicandLimit);
+  printf("Enter multiplicand and multipierLimit to get multiplication table :");
+  scanf("%d %d",&num,&limit);
+  printMultiplicationSeries(num,limit);
 
-  int num2,num3;
   printf("Enter two numbers to get the sum of all the numbers between those:");
-  scanf("%d %d",&num2,&num3);
-  printf("Sum of all the numbers between %d and %d is %d\n",num2,num3,sumOfN(num2,num3));
+  scanf("%d %d",&start,&end);
+  printf("Sum of all the numbers between %d and %d is %d\n",start,end,sumOfN(start,end));
 
-  int num4,num5;
   printf("Enter two numbers to get the product of all the numbers between those:");
-  scanf("%d %d",&num4,&num5);
-  printf("Product of all the numbers between %d and %d is %d\n",num4,num5,productOfN(num4,num5));
+  scanf("%d %d",&start,&end);
+  printf("Product of all the numbers between %d and %d is %d\n",start,end,productOfN(start,end));
 
-  int num6,num7;
   printf("Enter two numbers to get all odd numbers between those:");
-  scanf("%d %d",&num6,&num7);
-  printOddNumInRange(num6,num7);
+  scanf("%d %d",&start,&end);
+  printOddNumInRange(start,end);
 
-  int num8,num9;
-  printf("Enter two numbers to get the sum of all the even numbers between those:");
-  scanf("%d %d",&num8,&num9);
-  printf("Sum of all the even numbers between %d and %d is %d\n",num8,num9,sumOfEvenInRange(num8,num9));
-
-  int limit3;
-  printf("Enter a limit to get the reverse odd number series :");
-  scanf("%d",&limit3);
-  printReverseOddSeries(limit3);
-
-  int start,end,num10;
   printf("Enter range and nth number to get all the nth numbers in the range :");
-  scanf("%d %d %d",&start,&end,&num10);
-  printNthNumber(start,end,num10);
+  scanf("%d %d %d",&start,&end,&num);
+  printNthNumber(start,end,num);
 
+  printf("Enter two numbers to get the sum of all the even numbers between those:");
+  scanf("%d %d",&start,&end);
+  printf("Sum of all the even numbers between %d and %d is %d\n",start,end,sumOfEvenInRange(start,end));
+
+  printf("Enter a limit to get the reverse odd number series :");
+  scanf("%d",&limit);
+  printReverseOddSeries(limit);
+  
   return 0;
 }
