@@ -42,7 +42,7 @@ loops -->
 
 ✅8. Print all odd numbers between any two numbers - Write a function that PRINTS odd numbers between any number and N
 
-9. Print every nth number between any two number - Write a function that PRINTS every nth number between any two numbers:
+✅9. Print every nth number between any two number - Write a function that PRINTS every nth number between any two numbers:
 (every 7th number between 1 and 100) 1,8,15,22,29,36,...
 (every 4th number between 3 and 15) 3 7 11 15
 

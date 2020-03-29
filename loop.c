@@ -9,6 +9,7 @@ void printMultiplicationTable(int,int);
 int getSumOfN(int,int);
 int getProductOfN(int,int);
 void printOddNumInRange(int,int);
+void printNthNumber(int,int,int);
 int sumOfEvenInRange(int,int);
 void printReverseOddSeries(int);
 
@@ -72,6 +73,12 @@ void printOddNumInRange(int start,int end){
   }
 }
 
+void printNthNumber(int start,int end,int n){
+   for(int num=start;num<=end;num+=n){
+       printf("%d \n",num);
+  }
+}
+
 int sumOfEvenInRange(int start,int end){
   int even = start%2 ? start+1 : start;
   int sum=0;
@@ -90,55 +97,60 @@ void printReverseOddSeries(int limit){
 
 int main(void){
 
-  // int num;
-  // printf("Enter a number to get the factorial :");
-  // scanf("%d",&num);
-  // printf("factorial of %d is %d\n",num,factorial(num));
+  int num;
+  printf("Enter a number to get the factorial :");
+  scanf("%d",&num);
+  printf("factorial of %d is %d\n",num,factorial(num));
 
-  //  int num1;
-  //  printf("Enter a term to get the fibonacci series :");
-  //  scanf("%d",&num1);
-  //  printFibonacciSeries(num1);
+   int num1;
+   printf("Enter a term to get the fibonacci series :");
+   scanf("%d",&num1);
+   printFibonacciSeries(num1);
 
-  //  int limit1;
-  //  printf("Enter a limit to get the odd number series :");
-  //  scanf("%d",&limit1);
-  //  printOddSeries(limit1);
+   int limit1;
+   printf("Enter a limit to get the odd number series :");
+   scanf("%d",&limit1);
+   printOddSeries(limit1);
 
-  //  int limit2;
-  //  printf("Enter a limit to get the even number series :");
-  //  scanf("%d",&limit2);
-  //  printEvenSeries(limit2);
+   int limit2;
+   printf("Enter a limit to get the even number series :");
+   scanf("%d",&limit2);
+   printEvenSeries(limit2);
 
-  // int multiplier,multiplicandLimit;
-  //  printf("Enter multiplier and multiplicandLimit to get multiplication table :");
-  //  scanf("%d %d",&multiplier,&multiplicandLimit);
-  //  printMultiplicationSeries(multiplier,multiplicandLimit);
+  int multiplier,multiplicandLimit;
+   printf("Enter multiplier and multiplicandLimit to get multiplication table :");
+   scanf("%d %d",&multiplier,&multiplicandLimit);
+   printMultiplicationSeries(multiplier,multiplicandLimit);
 
-  // int num2,num3;
-  // printf("Enter two numbers to get the sum of all the numbers between those:");
-  // scanf("%d %d",&num2,&num3);
-  // printf("Sum of all the numbers between %d and %d is %d\n",num2,num3,sumOfN(num2,num3));
+  int num2,num3;
+  printf("Enter two numbers to get the sum of all the numbers between those:");
+  scanf("%d %d",&num2,&num3);
+  printf("Sum of all the numbers between %d and %d is %d\n",num2,num3,sumOfN(num2,num3));
 
-  // int num4,num5;
-  // printf("Enter two numbers to get the product of all the numbers between those:");
-  // scanf("%d %d",&num4,&num5);
-  // printf("Product of all the numbers between %d and %d is %d\n",num4,num5,productOfN(num4,num5));
+  int num4,num5;
+  printf("Enter two numbers to get the product of all the numbers between those:");
+  scanf("%d %d",&num4,&num5);
+  printf("Product of all the numbers between %d and %d is %d\n",num4,num5,productOfN(num4,num5));
 
-  // int num6,num7;
-  //  printf("Enter two numbers to get all odd numbers between those:");
-  //  scanf("%d %d",&num6,&num7);
-  //  printOddNumInRange(num6,num7);
+  int num6,num7;
+   printf("Enter two numbers to get all odd numbers between those:");
+   scanf("%d %d",&num6,&num7);
+   printOddNumInRange(num6,num7);
 
-  // int num8,num9;
-  // printf("Enter two numbers to get the sum of all the even numbers between those:");
-  // scanf("%d %d",&num8,&num9);
-  // printf("Sum of all the even numbers between %d and %d is %d\n",num8,num9,sumOfEvenInRange(num8,num9));
+  int num8,num9;
+  printf("Enter two numbers to get the sum of all the even numbers between those:");
+  scanf("%d %d",&num8,&num9);
+  printf("Sum of all the even numbers between %d and %d is %d\n",num8,num9,sumOfEvenInRange(num8,num9));
 
    int limit3;
    printf("Enter a limit to get the reverse odd number series :");
    scanf("%d",&limit3);
    printReverseOddSeries(limit3);
+
+  int start,end,num10;
+  printf("Enter range and nth number to get all the nth numbers in the range :");
+  scanf("%d %d %d",&start,&end,&num10);
+  printNthNumber(start,end,num10);
 
   return 0;
 }
