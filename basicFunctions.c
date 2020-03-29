@@ -25,7 +25,7 @@ int isOdd(int num){
 }
 
 long square(int num){
-  return num*num;
+  return (long)num*num;
 }
 
 long cube(int num){
