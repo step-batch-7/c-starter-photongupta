@@ -8,6 +8,7 @@ void printEvenSeries(int);
 void printMultiplicationTable(int,int);
 int getSumOfN(int,int);
 int getProductOfN(int,int);
+void printOddNumInRange(int,int);
 
 
 int factorial(int num){
@@ -62,6 +63,13 @@ int productOfN(int start,int end){
   return product;
 }
 
+void printOddNumInRange(int start,int end){
+  int odd = start%2 ? start : start+1;
+  for(;odd<=end;odd+=2){
+    printf("%d \n",odd);
+  }
+}
+
 int main(void){
 
   int num;
@@ -98,6 +106,11 @@ int main(void){
   printf("Enter two numbers to get the product of all the numbers between those:");
   scanf("%d %d",&num4,&num5);
   printf("Product of all the numbers between %d and %d is %d\n",num4,num5,productOfN(num4,num5));
+
+  int start,end;
+   printf("Enter two numbers to get all odd numbers between those:");
+   scanf("%d %d",&start,&end);
+   printOddNumInRange(start,end);
 
   return 0;
 }
