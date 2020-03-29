@@ -5,6 +5,7 @@ int factorial(int);
 void printFibonacciSeries(int);
 void printOddSeries(int);
 void printEvenSeries(int);
+void printMultiplicationTable(int,int);
 
 int factorial(int num){
   if(num==0){
@@ -24,15 +25,21 @@ void printFibonacciSeries(int term){
   }
 }
 
-void printOddSeries(int term){
-  for (int i = 1; i <= term; i+=2){
+void printOddSeries(int limit){
+  for (int i = 1; i <= limit; i+=2){
    printf("%d \n",i);
   }
 }
 
-void printEvenSeries(int term){
-  for (int i = 0; i <= term; i+=2){
+void printEvenSeries(int limit){
+  for (int i = 0; i <= limit; i+=2){
    printf("%d \n",i);
+  }
+}
+
+void printMultiplicationSeries(int multiplier,int multiplicandLimit){
+  for (int multiplicand = 1; multiplicand <= multiplicandLimit; multiplicand+=1){
+   printf("%d \n",multiplier*multiplicand);
   }
 }
 
@@ -57,6 +64,11 @@ int main(void){
    printf("Enter a limit to get the even number series :");
    scanf("%d",&limit2);
    printEvenSeries(limit2);
+
+  int multiplier,multiplicandLimit;
+   printf("Enter multiplier and multiplicandLimit to get multiplication table :");
+   scanf("%d %d",&multiplier,&multiplicandLimit);
+   printMultiplicationSeries(multiplier,multiplicandLimit);
 
   return 0;
 }
