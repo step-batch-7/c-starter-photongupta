@@ -6,6 +6,9 @@ void printFibonacciSeries(int);
 void printOddSeries(int);
 void printEvenSeries(int);
 void printMultiplicationTable(int,int);
+int getSumOfN(int,int);
+int getProductOfN(int,int);
+
 
 int factorial(int num){
   if(num==0){
@@ -43,6 +46,22 @@ void printMultiplicationSeries(int multiplier,int multiplicandLimit){
   }
 }
 
+int sumOfN(int start,int end){
+  int sum=0;
+  for(int num=start;num<=end;num++){
+    sum+=num;
+  }
+  return sum;
+}
+
+int productOfN(int start,int end){
+  int product=1;
+  for(int num=start;num<=end;num++){
+    product=product*num;
+  }
+  return product;
+}
+
 int main(void){
 
   int num;
@@ -69,6 +88,16 @@ int main(void){
    printf("Enter multiplier and multiplicandLimit to get multiplication table :");
    scanf("%d %d",&multiplier,&multiplicandLimit);
    printMultiplicationSeries(multiplier,multiplicandLimit);
+
+   int num2,num3;
+  printf("Enter two numbers to get the sum of all the numbers between those:");
+  scanf("%d %d",&num2,&num3);
+  printf("Sum of all the numbers between %d and %d is %d\n",num2,num3,sumOfN(num2,num3));
+
+  int num4,num5;
+  printf("Enter two numbers to get the product of all the numbers between those:");
+  scanf("%d %d",&num4,&num5);
+  printf("Product of all the numbers between %d and %d is %d\n",num4,num5,productOfN(num4,num5));
 
   return 0;
 }
